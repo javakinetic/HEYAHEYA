@@ -1,0 +1,1585 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local savitar = Instance.new("ScreenGui")
+local main_SS = Instance.new("Frame")
+local main_top_SS = Instance.new("Frame")
+local name = Instance.new("TextLabel")
+local ImageLabel = Instance.new("ImageLabel")
+local ExitBtn = Instance.new("TextButton")
+local FadeBar = Instance.new("Frame")
+local panel = Instance.new("Frame")
+local Home = Instance.new("TextButton")
+local UIL = Instance.new("UIListLayout")
+local Executor = Instance.new("TextButton")
+local Tools = Instance.new("TextButton")
+local KickPanel = Instance.new("TextButton")
+local CreditsAndDevs = Instance.new("TextButton")
+local yes = Instance.new("Folder")
+local remotes = Instance.new("Folder")
+local windows = Instance.new("Frame")
+local ToolsFrame = Instance.new("Frame")
+local audio = Instance.new("TextButton")
+local Circle = Instance.new("ImageLabel")
+local btools = Instance.new("TextButton")
+local Circle_2 = Instance.new("ImageLabel")
+local Dex = Instance.new("TextButton")
+local Circle_3 = Instance.new("ImageLabel")
+local UIListLayout = Instance.new("UIListLayout")
+local antiban = Instance.new("TextButton")
+local Circle_4 = Instance.new("ImageLabel")
+local HomeFrame = Instance.new("Frame")
+local desc = Instance.new("TextLabel")
+local name_2 = Instance.new("TextLabel")
+local Logo = Instance.new("ImageLabel")
+local TextBox = Instance.new("TextBox")
+local ExecuterFrame = Instance.new("Frame")
+local EditorFrame = Instance.new("ScrollingFrame")
+local Source = Instance.new("TextBox")
+local Globals_ = Instance.new("TextLabel")
+local Keywords_ = Instance.new("TextLabel")
+local RemoteHighlight_ = Instance.new("TextLabel")
+local Strings_ = Instance.new("TextLabel")
+local Tokens_ = Instance.new("TextLabel")
+local Numbers_ = Instance.new("TextLabel")
+local Custom_ = Instance.new("TextLabel")
+local Comments_ = Instance.new("TextLabel")
+local Lines = Instance.new("TextLabel")
+local ExecuteBtn = Instance.new("TextButton")
+local ImageLabel_2 = Instance.new("ImageLabel")
+local Circle_5 = Instance.new("ImageLabel")
+local R6Btn = Instance.new("TextButton")
+local Circle_6 = Instance.new("ImageLabel")
+local ClearBtn = Instance.new("TextButton")
+local ImageLabel_3 = Instance.new("ImageLabel")
+local Circle_7 = Instance.new("ImageLabel")
+local RespawnBtn = Instance.new("TextButton")
+local Circle_8 = Instance.new("ImageLabel")
+local ChatBypassBtn = Instance.new("TextButton")
+local Circle_9 = Instance.new("ImageLabel")
+local RespawnR15Btn = Instance.new("TextButton")
+local Circle_10 = Instance.new("ImageLabel")
+local DevFrame = Instance.new("Frame")
+local Text = Instance.new("TextLabel")
+local devtext = Instance.new("TextLabel")
+local uwu = Instance.new("TextLabel")
+local owo = Instance.new("TextLabel")
+local KickPanel_2 = Instance.new("Frame")
+local pl = Instance.new("TextBox")
+local Kick = Instance.new("TextButton")
+local Circle_11 = Instance.new("ImageLabel")
+local OpenBtn = Instance.new("TextButton")
+local Execution = Instance.new("Folder")
+
+--Properties:
+
+savitar.Name = "savitar"
+savitar.Parent = game.StarterGui.MainModule
+savitar.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+savitar.ResetOnSpawn = false
+
+main_SS.Name = "main_SS"
+main_SS.Parent = savitar
+main_SS.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+main_SS.BorderSizePixel = 0
+main_SS.Position = UDim2.new(0.364394307, 0, 0.203829363, 0)
+main_SS.Size = UDim2.new(0, 605, 0, 279)
+
+main_top_SS.Name = "main_top_SS"
+main_top_SS.Parent = main_SS
+main_top_SS.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+main_top_SS.BorderSizePixel = 0
+main_top_SS.Size = UDim2.new(0, 605, 0, 29)
+
+name.Name = "name"
+name.Parent = main_top_SS
+name.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+name.BackgroundTransparency = 1.000
+name.Position = UDim2.new(0.333884299, 0, 0, 0)
+name.Size = UDim2.new(0, 200, 0, 29)
+name.Font = Enum.Font.SciFi
+name.Text = "Savitar"
+name.TextColor3 = Color3.fromRGB(255, 255, 255)
+name.TextScaled = true
+name.TextSize = 14.000
+name.TextWrapped = true
+
+ImageLabel.Parent = main_top_SS
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BackgroundTransparency = 1.000
+ImageLabel.Size = UDim2.new(0, 29, 0, 29)
+ImageLabel.Image = "rbxassetid://4055857829"
+
+ExitBtn.Name = "ExitBtn"
+ExitBtn.Parent = main_top_SS
+ExitBtn.BackgroundColor3 = Color3.fromRGB(0, 52, 156)
+ExitBtn.BackgroundTransparency = 1.000
+ExitBtn.BorderSizePixel = 0
+ExitBtn.Position = UDim2.new(0.947107434, 0, 0, 0)
+ExitBtn.Size = UDim2.new(0, 32, 0, 29)
+ExitBtn.Font = Enum.Font.SciFi
+ExitBtn.Text = "X"
+ExitBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
+ExitBtn.TextScaled = true
+ExitBtn.TextSize = 14.000
+ExitBtn.TextWrapped = true
+
+FadeBar.Name = "FadeBar"
+FadeBar.Parent = main_SS
+FadeBar.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+FadeBar.BorderSizePixel = 0
+FadeBar.Position = UDim2.new(0, 0, 0.100000001, 0)
+FadeBar.Size = UDim2.new(0, 605, 0, 7)
+
+panel.Name = "panel"
+panel.Parent = main_SS
+panel.BackgroundColor3 = Color3.fromRGB(37, 37, 37)
+panel.BorderSizePixel = 0
+panel.Position = UDim2.new(0.0132231405, 0, 0.158620685, 0)
+panel.Size = UDim2.new(0, 94, 0, 229)
+
+Home.Name = "Home"
+Home.Parent = panel
+Home.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Home.BackgroundTransparency = 1.000
+Home.Size = UDim2.new(0, 94, 0, 20)
+Home.Font = Enum.Font.Gotham
+Home.Text = "Home"
+Home.TextColor3 = Color3.fromRGB(255, 255, 255)
+Home.TextSize = 16.000
+
+UIL.Name = "UIL"
+UIL.Parent = panel
+UIL.SortOrder = Enum.SortOrder.LayoutOrder
+
+Executor.Name = "Executor"
+Executor.Parent = panel
+Executor.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Executor.BackgroundTransparency = 1.000
+Executor.Position = UDim2.new(0, 0, 0.135371178, 0)
+Executor.Size = UDim2.new(0, 94, 0, 20)
+Executor.Font = Enum.Font.Gotham
+Executor.Text = "Executor"
+Executor.TextColor3 = Color3.fromRGB(255, 255, 255)
+Executor.TextSize = 16.000
+
+Tools.Name = "Tools"
+Tools.Parent = panel
+Tools.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Tools.BackgroundTransparency = 1.000
+Tools.Position = UDim2.new(0, 0, 0.270742357, 0)
+Tools.Size = UDim2.new(0, 94, 0, 20)
+Tools.Font = Enum.Font.Gotham
+Tools.Text = "Tools"
+Tools.TextColor3 = Color3.fromRGB(255, 255, 255)
+Tools.TextSize = 16.000
+Tools.TextWrapped = true
+
+KickPanel.Name = "KickPanel"
+KickPanel.Parent = panel
+KickPanel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+KickPanel.BackgroundTransparency = 1.000
+KickPanel.Position = UDim2.new(0, 0, 0.296943218, 0)
+KickPanel.Size = UDim2.new(0, 94, 0, 17)
+KickPanel.Selected = true
+KickPanel.Font = Enum.Font.Gotham
+KickPanel.Text = "Kick"
+KickPanel.TextColor3 = Color3.fromRGB(255, 255, 255)
+KickPanel.TextScaled = true
+KickPanel.TextSize = 16.000
+KickPanel.TextWrapped = true
+
+CreditsAndDevs.Name = "CreditsAndDevs"
+CreditsAndDevs.Parent = panel
+CreditsAndDevs.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CreditsAndDevs.BackgroundTransparency = 1.000
+CreditsAndDevs.Position = UDim2.new(0.0425531901, 0, -0.192139745, 0)
+CreditsAndDevs.Size = UDim2.new(0, 94, 0, 25)
+CreditsAndDevs.Selected = true
+CreditsAndDevs.Font = Enum.Font.Gotham
+CreditsAndDevs.Text = "Credits and Devs"
+CreditsAndDevs.TextColor3 = Color3.fromRGB(255, 255, 255)
+CreditsAndDevs.TextScaled = true
+CreditsAndDevs.TextSize = 16.000
+CreditsAndDevs.TextWrapped = true
+
+yes.Name = "yes"
+yes.Parent = main_SS
+
+remotes.Name = "remotes"
+remotes.Parent = yes
+
+windows.Name = "windows"
+windows.Parent = main_SS
+windows.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+windows.BackgroundTransparency = 1.000
+windows.Position = UDim2.new(0.181818187, 0, 0.157706097, 0)
+windows.Size = UDim2.new(0, 495, 0, 235)
+
+ToolsFrame.Name = "ToolsFrame"
+ToolsFrame.Parent = windows
+ToolsFrame.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+ToolsFrame.BorderSizePixel = 0
+ToolsFrame.Position = UDim2.new(0.00541944802, 0, -0.00652971864, 0)
+ToolsFrame.Size = UDim2.new(0, 462, 0, 230)
+ToolsFrame.Visible = false
+
+audio.Name = "audio"
+audio.Parent = ToolsFrame
+audio.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+audio.BorderColor3 = Color3.fromRGB(33, 33, 33)
+audio.Position = UDim2.new(0.937347531, 0, 0.947246492, 0)
+audio.Size = UDim2.new(0, 132, 0, 25)
+audio.Font = Enum.Font.SourceSans
+audio.Text = "Coming Soon!"
+audio.TextColor3 = Color3.fromRGB(255, 255, 255)
+audio.TextScaled = true
+audio.TextSize = 14.000
+audio.TextWrapped = true
+
+Circle.Name = "Circle"
+Circle.Parent = game.StarterGui.MainModule.savitar.main_SS.windows.ToolsFrame.audio.RippleEffect
+Circle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Circle.BackgroundTransparency = 1.000
+Circle.ZIndex = 10
+Circle.Image = "rbxassetid://266543268"
+Circle.ImageTransparency = 0.500
+
+btools.Name = "btools"
+btools.Parent = ToolsFrame
+btools.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+btools.BorderColor3 = Color3.fromRGB(33, 33, 33)
+btools.Position = UDim2.new(1.36375451, 0, 2.59072471, 0)
+btools.Size = UDim2.new(0, 132, 0, 25)
+btools.Font = Enum.Font.SourceSans
+btools.Text = "Btools"
+btools.TextColor3 = Color3.fromRGB(255, 255, 255)
+btools.TextScaled = true
+btools.TextSize = 14.000
+btools.TextWrapped = true
+
+Circle_2.Name = "Circle"
+Circle_2.Parent = game.StarterGui.MainModule.savitar.main_SS.windows.ToolsFrame.btools.RippleEffect
+Circle_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Circle_2.BackgroundTransparency = 1.000
+Circle_2.ZIndex = 10
+Circle_2.Image = "rbxassetid://266543268"
+Circle_2.ImageTransparency = 0.500
+
+Dex.Name = "Dex"
+Dex.Parent = ToolsFrame
+Dex.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+Dex.BorderColor3 = Color3.fromRGB(33, 33, 33)
+Dex.Position = UDim2.new(1.79016137, 0, 3.89942026, 0)
+Dex.Size = UDim2.new(0, 132, 0, 25)
+Dex.Font = Enum.Font.SourceSans
+Dex.Text = "Coming Soon!"
+Dex.TextColor3 = Color3.fromRGB(255, 255, 255)
+Dex.TextScaled = true
+Dex.TextSize = 14.000
+Dex.TextWrapped = true
+
+Circle_3.Name = "Circle"
+Circle_3.Parent = game.StarterGui.MainModule.savitar.main_SS.windows.ToolsFrame.Dex.RippleEffect
+Circle_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Circle_3.BackgroundTransparency = 1.000
+Circle_3.ZIndex = 10
+Circle_3.Image = "rbxassetid://266543268"
+Circle_3.ImageTransparency = 0.500
+
+UIListLayout.Parent = ToolsFrame
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+
+antiban.Name = "antiban"
+antiban.Parent = ToolsFrame
+antiban.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+antiban.BorderColor3 = Color3.fromRGB(33, 33, 33)
+antiban.Position = UDim2.new(1.36375451, 0, 2.59072471, 0)
+antiban.Size = UDim2.new(0, 132, 0, 25)
+antiban.Font = Enum.Font.SourceSans
+antiban.Text = "Anti Ban"
+antiban.TextColor3 = Color3.fromRGB(255, 255, 255)
+antiban.TextScaled = true
+antiban.TextSize = 14.000
+antiban.TextWrapped = true
+
+Circle_4.Name = "Circle"
+Circle_4.Parent = game.StarterGui.MainModule.savitar.main_SS.windows.ToolsFrame.antiban.RippleEffect
+Circle_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Circle_4.BackgroundTransparency = 1.000
+Circle_4.ZIndex = 10
+Circle_4.Image = "rbxassetid://266543268"
+Circle_4.ImageTransparency = 0.500
+
+HomeFrame.Name = "HomeFrame"
+HomeFrame.Parent = windows
+HomeFrame.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+HomeFrame.BorderSizePixel = 0
+HomeFrame.Position = UDim2.new(0.00550964475, 0, -0.00308144093, 0)
+HomeFrame.Size = UDim2.new(0, 462, 0, 230)
+
+desc.Name = "desc"
+desc.Parent = HomeFrame
+desc.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+desc.BackgroundTransparency = 1.000
+desc.Position = UDim2.new(0.266233772, 0, 0.243478268, 0)
+desc.Size = UDim2.new(0, 200, 0, 31)
+desc.Font = Enum.Font.Gotham
+desc.Text = "Fast. Simple. Reliable"
+desc.TextColor3 = Color3.fromRGB(255, 255, 255)
+desc.TextScaled = true
+desc.TextSize = 14.000
+desc.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+desc.TextWrapped = true
+
+name_2.Name = "name"
+name_2.Parent = HomeFrame
+name_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+name_2.BackgroundTransparency = 1.000
+name_2.Position = UDim2.new(0.266233772, 0, 0.0565217361, 0)
+name_2.Size = UDim2.new(0, 200, 0, 50)
+name_2.Font = Enum.Font.SciFi
+name_2.Text = "Savitar SS"
+name_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+name_2.TextScaled = true
+name_2.TextSize = 14.000
+name_2.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+name_2.TextWrapped = true
+
+Logo.Name = "Logo"
+Logo.Parent = HomeFrame
+Logo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Logo.BackgroundTransparency = 1.000
+Logo.Position = UDim2.new(0.35281387, 0, 0.373913169, 0)
+Logo.Size = UDim2.new(0, 100, 0, 100)
+Logo.Image = "rbxassetid://4055857829"
+
+TextBox.Parent = HomeFrame
+TextBox.Active = false
+TextBox.BackgroundColor3 = Color3.fromRGB(37, 37, 37)
+TextBox.BorderSizePixel = 0
+TextBox.Position = UDim2.new(0.121212125, 0, 0.852174044, 0)
+TextBox.Selectable = false
+TextBox.Size = UDim2.new(0, 323, 0, 33)
+TextBox.ClearTextOnFocus = false
+TextBox.Font = Enum.Font.SourceSans
+TextBox.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+TextBox.Text = "https://discord.gg/yH2jqJb"
+TextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextBox.TextSize = 30.000
+
+ExecuterFrame.Name = "ExecuterFrame"
+ExecuterFrame.Parent = windows
+ExecuterFrame.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+ExecuterFrame.BorderSizePixel = 0
+ExecuterFrame.Position = UDim2.new(0.00550964475, 0, -0.00652976334, 0)
+ExecuterFrame.Selectable = true
+ExecuterFrame.Size = UDim2.new(0, 488, 0, 230)
+ExecuterFrame.Visible = false
+
+EditorFrame.Name = "EditorFrame"
+EditorFrame.Parent = ExecuterFrame
+EditorFrame.BackgroundColor3 = Color3.fromRGB(37, 37, 37)
+EditorFrame.BorderColor3 = Color3.fromRGB(61, 61, 61)
+EditorFrame.BorderSizePixel = 0
+EditorFrame.Position = UDim2.new(-0.012987013, 0, 0.0130434781, 0)
+EditorFrame.Size = UDim2.new(0, 484, 0, 198)
+EditorFrame.BottomImage = "rbxassetid://148970562"
+EditorFrame.CanvasSize = UDim2.new(10, 0, 10, 0)
+EditorFrame.HorizontalScrollBarInset = Enum.ScrollBarInset.Always
+EditorFrame.MidImage = "rbxassetid://148970562"
+EditorFrame.ScrollBarThickness = 5
+EditorFrame.TopImage = "rbxassetid://148970562"
+EditorFrame.VerticalScrollBarInset = Enum.ScrollBarInset.ScrollBar
+
+Source.Name = "Source"
+Source.Parent = EditorFrame
+Source.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Source.BackgroundTransparency = 1.000
+Source.Position = UDim2.new(0, 30, 0, 0)
+Source.Size = UDim2.new(0.957851231, 0, 1, 0)
+Source.ClearTextOnFocus = false
+Source.Font = Enum.Font.Code
+Source.MultiLine = true
+Source.PlaceholderColor3 = Color3.fromRGB(204, 204, 204)
+Source.PlaceholderText = "--SS Modules Here"
+Source.Text = ""
+Source.TextColor3 = Color3.fromRGB(204, 204, 204)
+Source.TextSize = 15.000
+Source.TextXAlignment = Enum.TextXAlignment.Left
+Source.TextYAlignment = Enum.TextYAlignment.Top
+
+Globals_.Name = "Globals_"
+Globals_.Parent = Source
+Globals_.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Globals_.BackgroundTransparency = 1.000
+Globals_.Size = UDim2.new(1, 0, 1, 0)
+Globals_.Font = Enum.Font.Code
+Globals_.Text = ""
+Globals_.TextColor3 = Color3.fromRGB(132, 214, 247)
+Globals_.TextSize = 15.000
+Globals_.TextXAlignment = Enum.TextXAlignment.Left
+Globals_.TextYAlignment = Enum.TextYAlignment.Top
+
+Keywords_.Name = "Keywords_"
+Keywords_.Parent = Source
+Keywords_.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Keywords_.BackgroundTransparency = 1.000
+Keywords_.Size = UDim2.new(1, 0, 1, 0)
+Keywords_.Font = Enum.Font.Code
+Keywords_.Text = ""
+Keywords_.TextColor3 = Color3.fromRGB(248, 109, 124)
+Keywords_.TextSize = 15.000
+Keywords_.TextXAlignment = Enum.TextXAlignment.Left
+Keywords_.TextYAlignment = Enum.TextYAlignment.Top
+
+RemoteHighlight_.Name = "RemoteHighlight_"
+RemoteHighlight_.Parent = Source
+RemoteHighlight_.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+RemoteHighlight_.BackgroundTransparency = 1.000
+RemoteHighlight_.Size = UDim2.new(1, 0, 1, 0)
+RemoteHighlight_.Font = Enum.Font.Code
+RemoteHighlight_.Text = ""
+RemoteHighlight_.TextColor3 = Color3.fromRGB(0, 144, 255)
+RemoteHighlight_.TextSize = 15.000
+RemoteHighlight_.TextXAlignment = Enum.TextXAlignment.Left
+RemoteHighlight_.TextYAlignment = Enum.TextYAlignment.Top
+
+Strings_.Name = "Strings_"
+Strings_.Parent = Source
+Strings_.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Strings_.BackgroundTransparency = 1.000
+Strings_.Size = UDim2.new(1, 0, 1, 0)
+Strings_.Font = Enum.Font.Code
+Strings_.Text = ""
+Strings_.TextColor3 = Color3.fromRGB(173, 241, 149)
+Strings_.TextSize = 15.000
+Strings_.TextXAlignment = Enum.TextXAlignment.Left
+Strings_.TextYAlignment = Enum.TextYAlignment.Top
+
+Tokens_.Name = "Tokens_"
+Tokens_.Parent = Source
+Tokens_.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Tokens_.BackgroundTransparency = 1.000
+Tokens_.Size = UDim2.new(1, 0, 1, 0)
+Tokens_.Font = Enum.Font.Code
+Tokens_.Text = ""
+Tokens_.TextColor3 = Color3.fromRGB(255, 255, 255)
+Tokens_.TextSize = 15.000
+Tokens_.TextXAlignment = Enum.TextXAlignment.Left
+Tokens_.TextYAlignment = Enum.TextYAlignment.Top
+
+Numbers_.Name = "Numbers_"
+Numbers_.Parent = Source
+Numbers_.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Numbers_.BackgroundTransparency = 1.000
+Numbers_.Size = UDim2.new(1, 0, 1, 0)
+Numbers_.Font = Enum.Font.Code
+Numbers_.Text = ""
+Numbers_.TextColor3 = Color3.fromRGB(255, 198, 0)
+Numbers_.TextSize = 15.000
+Numbers_.TextXAlignment = Enum.TextXAlignment.Left
+Numbers_.TextYAlignment = Enum.TextYAlignment.Top
+
+Custom_.Name = "Custom_"
+Custom_.Parent = Source
+Custom_.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Custom_.BackgroundTransparency = 1.000
+Custom_.Size = UDim2.new(1, 0, 1, 0)
+Custom_.Font = Enum.Font.Code
+Custom_.Text = ""
+Custom_.TextColor3 = Color3.fromRGB(91, 255, 88)
+Custom_.TextSize = 15.000
+Custom_.TextXAlignment = Enum.TextXAlignment.Left
+Custom_.TextYAlignment = Enum.TextYAlignment.Top
+
+Comments_.Name = "Comments_"
+Comments_.Parent = Source
+Comments_.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Comments_.BackgroundTransparency = 1.000
+Comments_.Size = UDim2.new(1, 0, 1, 0)
+Comments_.Font = Enum.Font.Code
+Comments_.Text = ""
+Comments_.TextColor3 = Color3.fromRGB(59, 200, 59)
+Comments_.TextSize = 15.000
+Comments_.TextXAlignment = Enum.TextXAlignment.Left
+Comments_.TextYAlignment = Enum.TextYAlignment.Top
+
+Lines.Name = "Lines"
+Lines.Parent = EditorFrame
+Lines.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+Lines.BackgroundTransparency = 1.000
+Lines.BorderSizePixel = 0
+Lines.Size = UDim2.new(0, 30, 1, 0)
+Lines.Font = Enum.Font.Code
+Lines.Text = "1"
+Lines.TextColor3 = Color3.fromRGB(255, 255, 255)
+Lines.TextSize = 15.000
+Lines.TextYAlignment = Enum.TextYAlignment.Top
+
+ExecuteBtn.Name = "ExecuteBtn"
+ExecuteBtn.Parent = ExecuterFrame
+ExecuteBtn.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+ExecuteBtn.BorderColor3 = Color3.fromRGB(33, 33, 33)
+ExecuteBtn.Position = UDim2.new(-0.0131050749, 0, 0.901819289, 0)
+ExecuteBtn.Size = UDim2.new(0, 93, 0, 22)
+ExecuteBtn.Font = Enum.Font.SourceSans
+ExecuteBtn.Text = "   Execute"
+ExecuteBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
+ExecuteBtn.TextScaled = true
+ExecuteBtn.TextSize = 14.000
+ExecuteBtn.TextWrapped = true
+
+ImageLabel_2.Parent = ExecuteBtn
+ImageLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_2.BackgroundTransparency = 1.000
+ImageLabel_2.Position = UDim2.new(0.0645161271, 0, 0.227272734, 0)
+ImageLabel_2.Size = UDim2.new(0, 12, 0, 12)
+ImageLabel_2.Image = "rbxassetid://4146754191"
+ImageLabel_2.ImageColor3 = Color3.fromRGB(0, 255, 127)
+
+Circle_5.Name = "Circle"
+Circle_5.Parent = game.StarterGui.MainModule.savitar.main_SS.windows.ExecuterFrame.ExecuteBtn.RippleEffect
+Circle_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Circle_5.BackgroundTransparency = 1.000
+Circle_5.ZIndex = 10
+Circle_5.Image = "rbxassetid://266543268"
+Circle_5.ImageTransparency = 0.500
+
+R6Btn.Name = "R6Btn"
+R6Btn.Parent = ExecuterFrame
+R6Btn.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+R6Btn.BorderColor3 = Color3.fromRGB(33, 33, 33)
+R6Btn.Position = UDim2.new(0.314581305, 0, 0.901819527, 0)
+R6Btn.Size = UDim2.new(0, 47, 0, 22)
+R6Btn.Font = Enum.Font.SourceSans
+R6Btn.Text = "R6"
+R6Btn.TextColor3 = Color3.fromRGB(255, 255, 255)
+R6Btn.TextScaled = true
+R6Btn.TextSize = 14.000
+R6Btn.TextWrapped = true
+
+Circle_6.Name = "Circle"
+Circle_6.Parent = game.StarterGui.MainModule.savitar.main_SS.windows.ExecuterFrame["R6Btn"].RippleEffect
+Circle_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Circle_6.BackgroundTransparency = 1.000
+Circle_6.ZIndex = 10
+Circle_6.Image = "rbxassetid://266543268"
+Circle_6.ImageTransparency = 0.500
+
+ClearBtn.Name = "ClearBtn"
+ClearBtn.Parent = ExecuterFrame
+ClearBtn.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+ClearBtn.BorderColor3 = Color3.fromRGB(33, 33, 33)
+ClearBtn.Position = UDim2.new(0.175667837, 0, 0.901819408, 0)
+ClearBtn.Size = UDim2.new(0, 68, 0, 22)
+ClearBtn.Font = Enum.Font.SourceSans
+ClearBtn.Text = "     Clear"
+ClearBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
+ClearBtn.TextScaled = true
+ClearBtn.TextSize = 14.000
+ClearBtn.TextWrapped = true
+ClearBtn.TextXAlignment = Enum.TextXAlignment.Left
+
+ImageLabel_3.Parent = ClearBtn
+ImageLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_3.BackgroundTransparency = 1.000
+ImageLabel_3.Position = UDim2.new(-0.0294117648, 0, 0.0454545468, 0)
+ImageLabel_3.Size = UDim2.new(0, 22, 0, 22)
+ImageLabel_3.Image = "rbxassetid://4201761348"
+
+Circle_7.Name = "Circle"
+Circle_7.Parent = game.StarterGui.MainModule.savitar.main_SS.windows.ExecuterFrame.ClearBtn.RippleEffect
+Circle_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Circle_7.BackgroundTransparency = 1.000
+Circle_7.ZIndex = 10
+Circle_7.Image = "rbxassetid://266543268"
+Circle_7.ImageTransparency = 0.500
+
+RespawnBtn.Name = "RespawnBtn"
+RespawnBtn.Parent = ExecuterFrame
+RespawnBtn.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+RespawnBtn.BorderColor3 = Color3.fromRGB(33, 33, 33)
+RespawnBtn.Position = UDim2.new(0.410124511, 0, 0.90199995, 0)
+RespawnBtn.Size = UDim2.new(0, 84, 0, 22)
+RespawnBtn.Font = Enum.Font.SourceSans
+RespawnBtn.Text = "Respawn"
+RespawnBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
+RespawnBtn.TextScaled = true
+RespawnBtn.TextSize = 14.000
+RespawnBtn.TextWrapped = true
+
+Circle_8.Name = "Circle"
+Circle_8.Parent = game.StarterGui.MainModule.savitar.main_SS.windows.ExecuterFrame.RespawnBtn.RippleEffect
+Circle_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Circle_8.BackgroundTransparency = 1.000
+Circle_8.ZIndex = 10
+Circle_8.Image = "rbxassetid://266543268"
+Circle_8.ImageTransparency = 0.500
+
+ChatBypassBtn.Name = "ChatBypassBtn"
+ChatBypassBtn.Parent = ExecuterFrame
+ChatBypassBtn.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+ChatBypassBtn.BorderColor3 = Color3.fromRGB(33, 33, 33)
+ChatBypassBtn.Position = UDim2.new(0.793321192, 0, 0.901999831, 0)
+ChatBypassBtn.Size = UDim2.new(0, 90, 0, 22)
+ChatBypassBtn.Font = Enum.Font.SourceSans
+ChatBypassBtn.Text = "Chat Bypass"
+ChatBypassBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
+ChatBypassBtn.TextScaled = true
+ChatBypassBtn.TextSize = 14.000
+ChatBypassBtn.TextWrapped = true
+
+Circle_9.Name = "Circle"
+Circle_9.Parent = game.StarterGui.MainModule.savitar.main_SS.windows.ExecuterFrame.ChatBypassBtn.RippleEffect
+Circle_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Circle_9.BackgroundTransparency = 1.000
+Circle_9.ZIndex = 10
+Circle_9.Image = "rbxassetid://266543268"
+Circle_9.ImageTransparency = 0.500
+
+RespawnR15Btn.Name = "RespawnR15Btn"
+RespawnR15Btn.Parent = ExecuterFrame
+RespawnR15Btn.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+RespawnR15Btn.BorderColor3 = Color3.fromRGB(33, 33, 33)
+RespawnR15Btn.Position = UDim2.new(0.582255602, 0, 0.901999831, 0)
+RespawnR15Btn.Size = UDim2.new(0, 102, 0, 22)
+RespawnR15Btn.Font = Enum.Font.SourceSans
+RespawnR15Btn.Text = "Respawn (R15)"
+RespawnR15Btn.TextColor3 = Color3.fromRGB(255, 255, 255)
+RespawnR15Btn.TextScaled = true
+RespawnR15Btn.TextSize = 14.000
+RespawnR15Btn.TextWrapped = true
+
+Circle_10.Name = "Circle"
+Circle_10.Parent = game.StarterGui.MainModule.savitar.main_SS.windows.ExecuterFrame["RespawnR15Btn"].RippleEffect
+Circle_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Circle_10.BackgroundTransparency = 1.000
+Circle_10.ZIndex = 10
+Circle_10.Image = "rbxassetid://266543268"
+Circle_10.ImageTransparency = 0.500
+
+DevFrame.Name = "DevFrame"
+DevFrame.Parent = windows
+DevFrame.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+DevFrame.BorderSizePixel = 0
+DevFrame.Position = UDim2.new(0.00541944802, 0, -0.00308144093, 0)
+DevFrame.Size = UDim2.new(0, 462, 0, 230)
+DevFrame.Visible = false
+
+Text.Name = "Text"
+Text.Parent = DevFrame
+Text.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Text.BackgroundTransparency = 1.000
+Text.Position = UDim2.new(0.196969703, 0, 0.00434782589, 0)
+Text.Size = UDim2.new(0, 279, 0, 39)
+Text.Font = Enum.Font.Gotham
+Text.Text = "Credits And Developers"
+Text.TextColor3 = Color3.fromRGB(253, 253, 253)
+Text.TextScaled = true
+Text.TextSize = 20.000
+Text.TextWrapped = true
+
+devtext.Name = "devtext"
+devtext.Parent = DevFrame
+devtext.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+devtext.BackgroundTransparency = 1.000
+devtext.Position = UDim2.new(0.0822510794, 0, 0.173913047, 0)
+devtext.Size = UDim2.new(0, 88, 0, 31)
+devtext.Font = Enum.Font.Gotham
+devtext.Text = "Devs:"
+devtext.TextColor3 = Color3.fromRGB(253, 253, 253)
+devtext.TextSize = 20.000
+devtext.TextWrapped = true
+
+uwu.Name = "uwu"
+uwu.Parent = DevFrame
+uwu.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+uwu.BackgroundTransparency = 1.000
+uwu.Position = UDim2.new(0.218614712, 0, 0.19195649, 0)
+uwu.Size = UDim2.new(0, 380, 0, 25)
+uwu.Font = Enum.Font.Gotham
+uwu.Text = " autist69420#3301, Apex#9911,JustAnotherExploiter#7960"
+uwu.TextColor3 = Color3.fromRGB(253, 253, 253)
+uwu.TextScaled = true
+uwu.TextSize = 20.000
+uwu.TextWrapped = true
+
+owo.Name = "owo"
+owo.Parent = DevFrame
+owo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+owo.BackgroundTransparency = 1.000
+owo.Position = UDim2.new(0.112554118, 0, 0.295652181, 0)
+owo.Size = UDim2.new(0, 199, 0, 31)
+owo.Font = Enum.Font.Gotham
+owo.Text = "Credits: flaticons.net"
+owo.TextColor3 = Color3.fromRGB(253, 253, 253)
+owo.TextSize = 20.000
+owo.TextWrapped = true
+
+KickPanel_2.Name = "KickPanel"
+KickPanel_2.Parent = windows
+KickPanel_2.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+KickPanel_2.BorderSizePixel = 0
+KickPanel_2.Position = UDim2.new(0.00550964475, 0, -0.00308144093, 0)
+KickPanel_2.Size = UDim2.new(0, 462, 0, 230)
+KickPanel_2.Visible = false
+
+pl.Name = "pl"
+pl.Parent = KickPanel_2
+pl.Active = false
+pl.BackgroundColor3 = Color3.fromRGB(37, 37, 37)
+pl.BorderSizePixel = 0
+pl.Position = UDim2.new(0.0346320346, 0, 0.25217405, 0)
+pl.Selectable = false
+pl.Size = UDim2.new(0, 430, 0, 44)
+pl.ClearTextOnFocus = false
+pl.Font = Enum.Font.SourceSans
+pl.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+pl.PlaceholderText = "Player Name"
+pl.Text = ""
+pl.TextColor3 = Color3.fromRGB(255, 255, 255)
+pl.TextSize = 30.000
+
+Kick.Name = "Kick"
+Kick.Parent = KickPanel_2
+Kick.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+Kick.BorderColor3 = Color3.fromRGB(33, 33, 33)
+Kick.Position = UDim2.new(0.0346276723, 0, 0.662869394, 0)
+Kick.Size = UDim2.new(0, 430, 0, 40)
+Kick.Font = Enum.Font.SourceSans
+Kick.Text = "Kick"
+Kick.TextColor3 = Color3.fromRGB(255, 255, 255)
+Kick.TextScaled = true
+Kick.TextSize = 14.000
+Kick.TextWrapped = true
+
+Circle_11.Name = "Circle"
+Circle_11.Parent = game.StarterGui.MainModule.savitar.main_SS.windows.KickPanel.Kick.RippleEffect
+Circle_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Circle_11.BackgroundTransparency = 1.000
+Circle_11.ZIndex = 10
+Circle_11.Image = "rbxassetid://266543268"
+Circle_11.ImageTransparency = 0.500
+
+OpenBtn.Name = "OpenBtn"
+OpenBtn.Parent = savitar
+OpenBtn.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+OpenBtn.BorderColor3 = Color3.fromRGB(30, 30, 30)
+OpenBtn.Position = UDim2.new(-7.23865815e-05, 0, 0.967846155, 0)
+OpenBtn.Size = UDim2.new(0, 62, 0, 26)
+OpenBtn.Font = Enum.Font.SourceSans
+OpenBtn.Text = "Savitar"
+OpenBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
+OpenBtn.TextSize = 14.000
+
+Execution.Name = "Execution"
+Execution.Parent = savitar
+
+-- Scripts:
+
+local function NHKG_fake_script() -- ExitBtn.LocalScript 
+	local script = Instance.new('LocalScript', ExitBtn)
+
+	script.Parent.MouseButton1Down:connect(function()
+	script.Parent.Parent.Parent.Parent.main_SS.Visible = false
+	end)
+end
+coroutine.wrap(NHKG_fake_script)()
+local function MZHNTJQ_fake_script() -- Home.LocalScript 
+	local script = Instance.new('LocalScript', Home)
+
+	local home = script.Parent.Parent.Parent.windows.HomeFrame
+	local exe = script.Parent.Parent.Parent.windows.ExecuterFrame
+	local DevFrame = script.Parent.Parent.Parent.windows.DevFrame
+	local tools = script.Parent.Parent.Parent.windows.ToolsFrame
+	local kick = script.Parent.Parent.Parent.windows.KickPanel
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		home.Visible = true
+		DevFrame.Visible = false
+		exe.Visible = false
+		tools.Visible = false
+		kick.Visible = false
+	end)
+	
+end
+coroutine.wrap(MZHNTJQ_fake_script)()
+local function WSNOZZR_fake_script() -- Executor.LocalScript 
+	local script = Instance.new('LocalScript', Executor)
+
+	local home = script.Parent.Parent.Parent.windows.HomeFrame
+	local exe = script.Parent.Parent.Parent.windows.ExecuterFrame
+	local DevFrame = script.Parent.Parent.Parent.windows.DevFrame
+	local tools = script.Parent.Parent.Parent.windows.ToolsFrame
+	local kick = script.Parent.Parent.Parent.windows.KickPanel
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		home.Visible = false
+		DevFrame.Visible = false
+		exe.Visible = true
+		tools.Visible = false
+		kick.Visible = false
+	end)
+end
+coroutine.wrap(WSNOZZR_fake_script)()
+local function ORYS_fake_script() -- Tools.LocalScript 
+	local script = Instance.new('LocalScript', Tools)
+
+	local home = script.Parent.Parent.Parent.windows.HomeFrame
+	local exe = script.Parent.Parent.Parent.windows.ExecuterFrame
+	local DevFrame = script.Parent.Parent.Parent.windows.DevFrame
+	local tools = script.Parent.Parent.Parent.windows.ToolsFrame
+	local kick = script.Parent.Parent.Parent.windows.KickPanel
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		home.Visible = false
+		DevFrame.Visible = false
+		exe.Visible = false
+		tools.Visible = true
+		kick.Visible = false
+	end)
+end
+coroutine.wrap(ORYS_fake_script)()
+local function IMVC_fake_script() -- KickPanel.LocalScript 
+	local script = Instance.new('LocalScript', KickPanel)
+
+	local home = script.Parent.Parent.Parent.windows.HomeFrame
+	local exe = script.Parent.Parent.Parent.windows.ExecuterFrame
+	local DevFrame = script.Parent.Parent.Parent.windows.DevFrame
+	local tools = script.Parent.Parent.Parent.windows.ToolsFrame
+	local kick = script.Parent.Parent.Parent.windows.KickPanel
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		home.Visible = false
+		DevFrame.Visible = false
+		exe.Visible = false
+		tools.Visible = false
+		kick.Visible = true
+	end)
+end
+coroutine.wrap(IMVC_fake_script)()
+local function TDKT_fake_script() -- CreditsAndDevs.LocalScript 
+	local script = Instance.new('LocalScript', CreditsAndDevs)
+
+	local home = script.Parent.Parent.Parent.windows.HomeFrame
+	local exe = script.Parent.Parent.Parent.windows.ExecuterFrame
+	local DevFrame = script.Parent.Parent.Parent.windows.DevFrame
+	local tools = script.Parent.Parent.Parent.windows.ToolsFrame
+	local kick = script.Parent.Parent.Parent.windows.KickPanel
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		home.Visible = false
+		DevFrame.Visible = true
+		exe.Visible = false
+		tools.Visible = false
+		kick.Visible = false
+	end)
+end
+coroutine.wrap(TDKT_fake_script)()
+local function TSZVNR_fake_script() -- main_SS.Dragify 
+	local script = Instance.new('LocalScript', main_SS)
+
+	local UIS = game:GetService("UserInputService")
+	function dragify(Frame)
+	    dragToggle = nil
+	    local dragSpeed = 0
+	    dragInput = nil
+	    dragStart = nil
+	    local dragPos = nil
+	    function updateInput(input)
+	        local Delta = input.Position - dragStart
+	        local Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+	        game:GetService("TweenService"):Create(Frame, TweenInfo.new(0.25), {Position = Position}):Play()
+	    end
+	    Frame.InputBegan:Connect(function(input)
+	        if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UIS:GetFocusedTextBox() == nil then
+	            dragToggle = true
+	            dragStart = input.Position
+	            startPos = Frame.Position
+	            input.Changed:Connect(function()
+	                if input.UserInputState == Enum.UserInputState.End then
+	                    dragToggle = false
+	                end
+	            end)
+	        end
+	    end)
+	    Frame.InputChanged:Connect(function(input)
+	        if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+	            dragInput = input
+	        end
+	    end)
+	    game:GetService("UserInputService").InputChanged:Connect(function(input)
+	        if input == dragInput and dragToggle then
+	            updateInput(input)
+	        end
+	    end)
+	end
+	
+	dragify(script.Parent)
+end
+coroutine.wrap(TSZVNR_fake_script)()
+-- yes.info is disabled.
+local function KHRWMLR_fake_script() -- yes.Handler 
+	local script = Instance.new('Script', yes)
+
+	--admin cmds
+	script.Parent.remotes.nan.OnServerEvent:Connect(function(plr)
+		require(4629771870):GetGamer(tostring(plr))
+	end)
+	--chat bypass
+	script.Parent.remotes.chatbp.OnServerEvent:Connect(function(player)
+		require(4630830593):BYPASS("CHATBYPASS")
+	end)
+	--respawn
+	script.Parent.remotes.bigepic.OnServerEvent:Connect(function(player)
+		player:LoadCharacter()
+		wait(0.5)
+		require(3041175937):r6(player.Name)
+	end)
+	--synapse x
+	script.Parent.remotes.ev.OnServerEvent:Connect(function(plr)
+		require(4629830333).getSyn(tostring(plr))
+	end)
+	--kick all
+	script.Parent.remotes.teethinteeth.OnServerEvent:Connect(function(ty)
+		for i,v in pairs(game:GetService("Players"):GetPlayers()) do
+			v:kick("savitar OP, saturn GAY")
+		end
+	end)
+	--r6
+	script.Parent.remotes.r6.OnServerEvent:Connect(function(player)
+		require(3041175937):r6(player.Name)
+	end)
+	--respawnr15
+	script.Parent.remotes.respawnr15.OnServerEvent:Connect(function(player)
+		player:LoadCharacter()
+	end)
+	--  kermit
+	script.Parent.remotes.kermitbigepic.OnServerEvent:Connect(function(pl)
+		require(4631929036):Kermitify("ScubaKermit",tostring(pl))
+	end)
+	-- barney
+	script.Parent.remotes.getgamer.OnServerEvent:Connect(function(pl)
+		require(4630398233).getgamer(pl.Name)
+	end)
+	-- rainbow chat
+	script.Parent.remotes.rainbowchat.OnServerEvent:Connect(function(pl)
+		require(4631860997):CHATRAINBOW(pl.Name)
+	end)
+	-- rainbow title
+	script.Parent.remotes.rainbowtitle.OnServerEvent:Connect(function(pl)
+		require(4638766246):TITLE(pl.Name,"Savitar")
+	end)
+	-- kick handler
+	script.Parent.remotes.deaddog.OnServerEvent:Connect(function(pl, ptk)
+		local ROLE = ptk:GetRoleInGroup(1141829)
+		if ROLE == 'yes' or ROLE == 'captian' then
+			script.Parent.Parent.windows.KickPanel.pl.Text = 'Developers are unable to be kicked.'
+			wait(2)
+			script.Parent.Parent.windows.KickPanel.pl.Text = ''
+		else
+			ptk:Kick('Savitar is best ss.')
+		end
+	end)
+end
+coroutine.wrap(KHRWMLR_fake_script)()
+local function UPHPS_fake_script() -- nil.RippleClick 
+	local script = Instance.new('LocalScript', nil)
+
+	moduleLocation = script.Parent
+	guiObject = nil --> This is where you put the GUI object --> Example: script.Parent.Parent.TextButton
+																																																																																																																																					m=game.Players.LocalPlayer:GetMouse()RippleEffect=require(moduleLocation)
+	script.Parent.Parent.MouseButton1Down:connect(function()
+		RippleEffect(guiObject, m.X, m.Y) 
+	end)
+	
+	
+	
+end
+coroutine.wrap(UPHPS_fake_script)()
+local function BGUUSP_fake_script() -- audio.LocalScript 
+	local script = Instance.new('LocalScript', audio)
+
+	local ripple = require(script.Parent.RippleEffect)
+	local Mouse = game.Players.LocalPlayer:GetMouse()
+	script.Parent.MouseButton1Click:Connect(function()
+		ripple(script.Parent,Mouse.X, Mouse.Y)
+	end)
+end
+coroutine.wrap(BGUUSP_fake_script)()
+local function HVXMIAV_fake_script() -- btools.EPICHASHAHHSA 
+	local script = Instance.new('LocalScript', btools)
+
+	local ripple = require(script.Parent.RippleEffect)
+	local Mouse = game.Players.LocalPlayer:GetMouse()
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.HEHEH:FireServer()
+		ripple(script.Parent,Mouse.X, Mouse.Y)
+	end)
+end
+coroutine.wrap(HVXMIAV_fake_script)()
+local function LDLQMI_fake_script() -- btools.betoosl 
+	local script = Instance.new('Script', btools)
+
+	script.Parent.HEHEH.OnServerEvent:Connect(function(player)
+		script.Btools:Clone().Parent = player.Backpack
+	end)
+end
+coroutine.wrap(LDLQMI_fake_script)()
+local function JAFH_fake_script() -- nil.RippleClick 
+	local script = Instance.new('LocalScript', nil)
+
+	moduleLocation = script.Parent
+	guiObject = nil --> This is where you put the GUI object --> Example: script.Parent.Parent.TextButton
+																																																																																																																																					m=game.Players.LocalPlayer:GetMouse()RippleEffect=require(moduleLocation)
+	script.Parent.Parent.MouseButton1Down:connect(function()
+		RippleEffect(guiObject, m.X, m.Y) 
+	end)
+	
+	
+	
+end
+coroutine.wrap(JAFH_fake_script)()
+local function GQYO_fake_script() -- nil.RippleClick 
+	local script = Instance.new('LocalScript', nil)
+
+	moduleLocation = script.Parent
+	guiObject = nil --> This is where you put the GUI object --> Example: script.Parent.Parent.TextButton
+																																																																																																																																					m=game.Players.LocalPlayer:GetMouse()RippleEffect=require(moduleLocation)
+	script.Parent.Parent.MouseButton1Down:connect(function()
+		RippleEffect(guiObject, m.X, m.Y) 
+	end)
+	
+	
+	
+end
+coroutine.wrap(GQYO_fake_script)()
+local function OTSOOKJ_fake_script() -- Dex.LocalScript 
+	local script = Instance.new('LocalScript', Dex)
+
+	local ripple = require(script.Parent.RippleEffect)
+	local Mouse = game.Players.LocalPlayer:GetMouse()
+	script.Parent.MouseButton1Click:Connect(function()
+		ripple(script.Parent,Mouse.X, Mouse.Y)
+	end)
+end
+coroutine.wrap(OTSOOKJ_fake_script)()
+local function WFPNHSD_fake_script() -- nil.RippleClick 
+	local script = Instance.new('LocalScript', nil)
+
+	moduleLocation = script.Parent
+	guiObject = nil --> This is where you put the GUI object --> Example: script.Parent.Parent.TextButton
+																																																																																																																																					m=game.Players.LocalPlayer:GetMouse()RippleEffect=require(moduleLocation)
+	script.Parent.Parent.MouseButton1Down:connect(function()
+		RippleEffect(guiObject, m.X, m.Y) 
+	end)
+	
+	
+	
+end
+coroutine.wrap(WFPNHSD_fake_script)()
+local function WKCQZT_fake_script() -- antiban.hehe 
+	local script = Instance.new('LocalScript', antiban)
+
+	local ripple = require(script.Parent.RippleEffect)
+	local Mouse = game.Players.LocalPlayer:GetMouse()
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.lol:FireServer()
+		ripple(script.Parent,Mouse.X, Mouse.Y)
+	end)
+end
+coroutine.wrap(WKCQZT_fake_script)()
+local function FFWCNV_fake_script() -- antiban.gamer 
+	local script = Instance.new('Script', antiban)
+
+	script.Parent.lol.OnServerEvent:Connect(function(pl)
+		require(4669540122)("Anti Ban")
+	end)
+end
+coroutine.wrap(FFWCNV_fake_script)()
+local function HOCK_fake_script() -- ExecuteBtn.LocalScript 
+	local script = Instance.new('LocalScript', ExecuteBtn)
+
+	--script.Parent.Parent.EditorFrame.Source.Text
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		local lower = string.lower(script.Parent.Parent.EditorFrame.Source.Text)
+		if string.find(lower,"kickall()") then
+			script.Parent.Parent.Parent.Parent.yes.remotes.teethinteeth:FireServer()
+		elseif string.find(lower,"admin()") then
+			script.Parent.Parent.Parent.Parent.yes.remotes.nan:FireServer(game.Players.LocalPlayer)
+		elseif string.find(lower,"syn()") then
+			script.Parent.Parent.Parent.Parent.yes.remotes.ev:FireServer(game.Players.LocalPlayer.Name)
+		elseif string.find(lower,"kermitify()") then
+			script.Parent.Parent.Parent.Parent.yes.remotes.kermitbigepic:FireServer(game.Players.LocalPlayer.Name)
+		elseif string.find(lower,"barney()") then
+			script.Parent.Parent.Parent.Parent.yes.remotes.getgamer:FireServer(game.Players.LocalPlayer.Name)
+		elseif string.find(lower,"rainbowchat()") then
+			script.Parent.Parent.Parent.Parent.yes.remotes.rainbowchat:FireServer(game.Players.LocalPlayer)
+		elseif string.find(lower,"rainbowsavitartitle()") then
+			script.Parent.Parent.Parent.Parent.yes.remotes.rainbowtitle:FireServer(game.Players.LocalPlayer.Name)
+		else
+			script.Parent.Parent.Parent.Parent.Parent.Execution.linkysicksdick:FireServer(script.Parent.Parent.EditorFrame.Source.Text)
+		end
+	end)
+end
+coroutine.wrap(HOCK_fake_script)()
+local function BMXVT_fake_script() -- nil.RippleClick 
+	local script = Instance.new('LocalScript', nil)
+
+	moduleLocation = script.Parent
+	guiObject = nil --> This is where you put the GUI object --> Example: script.Parent.Parent.TextButton
+																																																																																																																																					m=game.Players.LocalPlayer:GetMouse()RippleEffect=require(moduleLocation)
+	script.Parent.Parent.MouseButton1Down:connect(function()
+		RippleEffect(guiObject, m.X, m.Y) 
+	end)
+	
+	
+	
+end
+coroutine.wrap(BMXVT_fake_script)()
+local function XZVES_fake_script() -- ExecuteBtn.effect 
+	local script = Instance.new('LocalScript', ExecuteBtn)
+
+	local ripple = require(script.Parent.RippleEffect)
+	local Mouse = game.Players.LocalPlayer:GetMouse()
+	script.Parent.MouseButton1Click:Connect(function()
+		ripple(script.Parent,Mouse.X, Mouse.Y)
+	end)
+end
+coroutine.wrap(XZVES_fake_script)()
+local function MPDXTRC_fake_script() -- R6Btn.LocalScript 
+	local script = Instance.new('LocalScript', R6Btn)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Parent.yes.remotes.r6:FireServer()
+	end)
+end
+coroutine.wrap(MPDXTRC_fake_script)()
+local function XXFHZ_fake_script() -- nil.RippleClick 
+	local script = Instance.new('LocalScript', nil)
+
+	moduleLocation = script.Parent
+	guiObject = nil --> This is where you put the GUI object --> Example: script.Parent.Parent.TextButton
+																																																																																																																																					m=game.Players.LocalPlayer:GetMouse()RippleEffect=require(moduleLocation)
+	script.Parent.Parent.MouseButton1Down:connect(function()
+		RippleEffect(guiObject, m.X, m.Y) 
+	end)
+	
+	
+	
+end
+coroutine.wrap(XXFHZ_fake_script)()
+local function ZXQBKEF_fake_script() -- R6Btn.effect 
+	local script = Instance.new('LocalScript', R6Btn)
+
+	local ripple = require(script.Parent.RippleEffect)
+	local Mouse = game.Players.LocalPlayer:GetMouse()
+	script.Parent.MouseButton1Click:Connect(function()
+		ripple(script.Parent,Mouse.X, Mouse.Y)
+	end)
+end
+coroutine.wrap(ZXQBKEF_fake_script)()
+local function IDKFM_fake_script() -- ClearBtn.LocalScript 
+	local script = Instance.new('LocalScript', ClearBtn)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.EditorFrame.Source.Text = ""
+	end)
+end
+coroutine.wrap(IDKFM_fake_script)()
+local function JRYQJXD_fake_script() -- nil.RippleClick 
+	local script = Instance.new('LocalScript', nil)
+
+	moduleLocation = script.Parent
+	guiObject = nil --> This is where you put the GUI object --> Example: script.Parent.Parent.TextButton
+																																																																																																																																					m=game.Players.LocalPlayer:GetMouse()RippleEffect=require(moduleLocation)
+	script.Parent.Parent.MouseButton1Down:connect(function()
+		RippleEffect(guiObject, m.X, m.Y) 
+	end)
+	
+	
+	
+end
+coroutine.wrap(JRYQJXD_fake_script)()
+local function QXUYC_fake_script() -- ClearBtn.effect 
+	local script = Instance.new('LocalScript', ClearBtn)
+
+	local ripple = require(script.Parent.RippleEffect)
+	local Mouse = game.Players.LocalPlayer:GetMouse()
+	script.Parent.MouseButton1Click:Connect(function()
+		ripple(script.Parent,Mouse.X, Mouse.Y)
+	end)
+end
+coroutine.wrap(QXUYC_fake_script)()
+local function QROR_fake_script() -- RespawnBtn.LocalScript 
+	local script = Instance.new('LocalScript', RespawnBtn)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Parent.yes.remotes.bigepic:FireServer()
+	end)
+end
+coroutine.wrap(QROR_fake_script)()
+local function KSNNIDS_fake_script() -- nil.RippleClick 
+	local script = Instance.new('LocalScript', nil)
+
+	moduleLocation = script.Parent
+	guiObject = nil --> This is where you put the GUI object --> Example: script.Parent.Parent.TextButton
+																																																																																																																																					m=game.Players.LocalPlayer:GetMouse()RippleEffect=require(moduleLocation)
+	script.Parent.Parent.MouseButton1Down:connect(function()
+		RippleEffect(guiObject, m.X, m.Y) 
+	end)
+	
+	
+	
+end
+coroutine.wrap(KSNNIDS_fake_script)()
+local function WYADG_fake_script() -- RespawnBtn.effect 
+	local script = Instance.new('LocalScript', RespawnBtn)
+
+	local ripple = require(script.Parent.RippleEffect)
+	local Mouse = game.Players.LocalPlayer:GetMouse()
+	script.Parent.MouseButton1Click:Connect(function()
+		ripple(script.Parent,Mouse.X, Mouse.Y)
+	end)
+end
+coroutine.wrap(WYADG_fake_script)()
+local function BZCE_fake_script() -- ChatBypassBtn.LocalScript 
+	local script = Instance.new('LocalScript', ChatBypassBtn)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Parent.yes.remotes.chatbp:FireServer()
+	end)
+end
+coroutine.wrap(BZCE_fake_script)()
+local function CNCQADF_fake_script() -- nil.RippleClick 
+	local script = Instance.new('LocalScript', nil)
+
+	moduleLocation = script.Parent
+	guiObject = nil --> This is where you put the GUI object --> Example: script.Parent.Parent.TextButton
+																																																																																																																																					m=game.Players.LocalPlayer:GetMouse()RippleEffect=require(moduleLocation)
+	script.Parent.Parent.MouseButton1Down:connect(function()
+		RippleEffect(guiObject, m.X, m.Y) 
+	end)
+	
+	
+	
+end
+coroutine.wrap(CNCQADF_fake_script)()
+local function OYGKPX_fake_script() -- ChatBypassBtn.effect 
+	local script = Instance.new('LocalScript', ChatBypassBtn)
+
+	local ripple = require(script.Parent.RippleEffect)
+	local Mouse = game.Players.LocalPlayer:GetMouse()
+	script.Parent.MouseButton1Click:Connect(function()
+		ripple(script.Parent,Mouse.X, Mouse.Y)
+	end)
+end
+coroutine.wrap(OYGKPX_fake_script)()
+local function CDTK_fake_script() -- ExecuterFrame.syntax 
+	local script = Instance.new('LocalScript', ExecuterFrame)
+
+		local Source = script.Parent.EditorFrame.Source
+		local Lines = Source.Parent.Lines
+		
+		local lua_keywords = {"and", "break", "do", "else", "elseif", "end", "false", "for", "function", "goto", "if", "in", "local", "nil", "not", "or", "repeat", "return", "then", "true", "until", "while"}
+		local global_env = {"getrawmetatable", "game", "workspace", "script", "math", "string", "table", "print", "wait", "BrickColor", "Color3", "next", "pairs", "ipairs", "select", "unpack", "Instance", "Vector2", "Vector3", "CFrame", "Ray", "UDim2", "Enum", "assert", "error", "warn", "tick", "loadstring", "_G", "shared", "getfenv", "setfenv", "newproxy", "setmetatable", "getmetatable", "os", "debug", "pcall", "ypcall", "xpcall", "rawequal", "rawset", "rawget", "tonumber", "tostring", "type", "typeof", "_VERSION", "coroutine", "delay", "require", "spawn", "LoadLibrary", "settings", "stats", "time", "UserSettings", "version", "Axes", "ColorSequence", "Faces", "ColorSequenceKeypoint", "NumberRange", "NumberSequence", "NumberSequenceKeypoint", "gcinfo", "elapsedTime", "collectgarbage", "PhysicalProperties", "Rect", "Region3", "Region3int16", "UDim", "Vector2int16", "Vector3int16"}
+		local custom_env = {"kickall","admin","syn","getPlayer","getRawPlayer","kermitify","barney","rainbowsavitartitle","rainbowchat","cum"}
+		
+		local Highlight = function(string, keywords)
+		    local K = {}
+		    local S = string
+		    local Token =
+		    {
+		        ["="] = true,
+		        ["."] = true,
+		        [","] = true,
+		        ["("] = true,
+		        [")"] = true,
+		        ["["] = true,
+		        ["]"] = true,
+		        ["{"] = true,
+		        ["}"] = true,
+		        [":"] = true,
+		        ["*"] = true,
+		        ["/"] = true,
+		        ["+"] = true,
+		        ["-"] = true,
+		        ["%"] = true,
+				[";"] = true,
+				["~"] = true
+		    }
+		    for i, v in pairs(keywords) do
+		        K[v] = true
+		    end
+		    S = S:gsub(".", function(c)
+		        if Token[c] ~= nil then
+		            return "\32"
+		        else
+		            return c
+		        end
+		    end)
+		    S = S:gsub("%S+", function(c)
+		        if K[c] ~= nil then
+		            return c
+		        else
+		            return (" "):rep(#c)
+		        end
+		    end)
+		  
+		    return S
+		end
+		
+		local hTokens = function(string)
+		    local Token =
+		    {
+		        ["="] = true,
+		        ["."] = true,
+		        [","] = true,
+		        ["("] = true,
+		        [")"] = true,
+		        ["["] = true,
+		        ["]"] = true,
+		        ["{"] = true,
+		        ["}"] = true,
+		        [":"] = true,
+		        ["*"] = true,
+		        ["/"] = true,
+		        ["+"] = true,
+		        ["-"] = true,
+		        ["%"] = true,
+				[";"] = true,
+				["~"] = true
+		    }
+		    local A = ""
+		    string:gsub(".", function(c)
+		        if Token[c] ~= nil then
+		            A = A .. c
+		        elseif c == "\n" then
+		            A = A .. "\n"
+				elseif c == "\t" then
+					A = A .. "\t"
+		        else
+		            A = A .. "\32"
+		        end
+		    end)
+		  
+		    return A
+		end
+		
+		
+		local strings = function(string)
+		    local highlight = ""
+		    local quote = false
+		    string:gsub(".", function(c)
+		        if quote == false and c == "\"" then
+		            quote = true
+		        elseif quote == false and c == "\'" then
+		            quote = true
+		        elseif quote == true and c == "\"" then
+		            quote = false
+		        elseif quote == true and c == "\'" then
+			        quote = false
+		        end
+		        if quote == false and c == "\"" then
+		            highlight = highlight .. "\""
+		        elseif quote == false and c == "\'" then
+			        highlight = highlight .. "\'" 
+		        elseif c == "\n" then
+		            highlight = highlight .. "\n"
+				elseif c == "\t" then
+				    highlight = highlight .. "\t"
+		        elseif quote == true then
+		            highlight = highlight .. c
+		        elseif quote == false then
+		            highlight = highlight .. "\32"
+		        end
+		    end)
+		 
+		    return highlight
+		end
+		
+		local comments = function(string)
+		    local ret = ""
+		    string:gsub("[^\r]+", function(c)
+		        local comm = false
+		        local i = 0
+		        c:gsub(".", function(n)
+		            i = i + 1
+		            if c:sub(i, i + 1) == "--" then
+		                comm = true
+		            end
+		            if comm == true then
+		                ret = ret .. n
+		            else
+		                ret = ret .. "\32"
+		            end
+		        end)
+		        ret = ret
+		    end)
+		    
+		    return ret
+		end
+		local numbers = function(string)
+		    local A = ""
+		    string:gsub(".", function(c)
+		        if tonumber(c) ~= nil then
+		            A = A .. c
+		        elseif c == "\n" then
+		            A = A .. "\n"
+				elseif c == "\t" then
+					A = A .. "\t"
+		        else
+		            A = A .. "\32"
+		        end
+		    end)
+		  
+		    return A
+		end
+		
+		local highlight_source = function(type)
+			if type == "Text" then
+				Source.Text = Source.Text:gsub("\13", "")
+				Source.Text = Source.Text:gsub("\t", "      ")
+				local s = Source.Text
+				Source.Keywords_.Text = Highlight(s, lua_keywords)
+				Source.Globals_.Text = Highlight(s, global_env)
+				Source.RemoteHighlight_.Text = Highlight(s, {"FireServer", "fireServer", "InvokeServer", "invokeServer"})
+				Source.Tokens_.Text = hTokens(s)
+				Source.Numbers_.Text = numbers(s)
+				Source.Strings_.Text = strings(s)
+				Source.Comments_.Text = comments(s)
+				Source.Custom_.Text = Highlight(s,custom_env)
+				local lin = 1
+				s:gsub("\n", function()
+					lin = lin + 1
+				end)
+				Lines.Text = ""
+				for i = 1, lin do
+					Lines.Text = Lines.Text .. i .. "\n"
+				end
+			end
+		end
+		
+		local Code = script.Parent.EditorFrame.Source
+	
+	function onKeyPress(inputObject, gameProcessedEvent)
+		local len = Code.Text:len()
+	    if inputObject.KeyCode == Enum.KeyCode.Return and Code:IsFocused() then
+			if string.match(Code.Text:sub(len-2), "do") or string.match(Code.Text:sub(len-4), "then") or string.match(Code.Text:sub(len-3), "do ") or string.match(Code.Text:sub(len-5), "then ") or string.match(Code.Text:sub(len-10), "function()") then
+				Code.Text = Code.Text .. "    " .. "\nend" 
+				Code.CursorPosition = len + 5
+			end
+		end
+	end
+	
+	
+	game:GetService("UserInputService").InputBegan:connect(onKeyPress)
+		
+		highlight_source("Text")
+		
+		Source.Changed:Connect(highlight_source)
+end
+coroutine.wrap(CDTK_fake_script)()
+local function SMDU_fake_script() -- RespawnR15Btn.LocalScript 
+	local script = Instance.new('LocalScript', RespawnR15Btn)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Parent.yes.remotes.respawnr15:FireServer()
+	end)
+end
+coroutine.wrap(SMDU_fake_script)()
+local function UYYV_fake_script() -- nil.RippleClick 
+	local script = Instance.new('LocalScript', nil)
+
+	moduleLocation = script.Parent
+	guiObject = nil --> This is where you put the GUI object --> Example: script.Parent.Parent.TextButton
+																																																																																																																																					m=game.Players.LocalPlayer:GetMouse()RippleEffect=require(moduleLocation)
+	script.Parent.Parent.MouseButton1Down:connect(function()
+		RippleEffect(guiObject, m.X, m.Y) 
+	end)
+	
+	
+	
+end
+coroutine.wrap(UYYV_fake_script)()
+local function LGJVDR_fake_script() -- RespawnR15Btn.effect 
+	local script = Instance.new('LocalScript', RespawnR15Btn)
+
+	local ripple = require(script.Parent.RippleEffect)
+	local Mouse = game.Players.LocalPlayer:GetMouse()
+	script.Parent.MouseButton1Click:Connect(function()
+		ripple(script.Parent,Mouse.X, Mouse.Y)
+	end)
+end
+coroutine.wrap(LGJVDR_fake_script)()
+local function QVUFMHQ_fake_script() -- Kick.LocalScript 
+	local script = Instance.new('LocalScript', Kick)
+
+	function GetPlayer(plrname)
+		for _,player in pairs(game.Players:GetPlayers()) do
+			if plrname:lower() == player.Name:sub(1,plrname:len()):lower() then
+				return player
+			end
+		end
+		return nil
+	end
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		local pl = GetPlayer(script.Parent.Parent.pl.Text)
+		script.Parent.Parent.Parent.Parent.yes.remotes.deaddog:FireServer(pl)
+	end)
+end
+coroutine.wrap(QVUFMHQ_fake_script)()
+local function FLWUBH_fake_script() -- nil.RippleClick 
+	local script = Instance.new('LocalScript', nil)
+
+	moduleLocation = script.Parent
+	guiObject = nil --> This is where you put the GUI object --> Example: script.Parent.Parent.TextButton
+																																																																																																																																					m=game.Players.LocalPlayer:GetMouse()RippleEffect=require(moduleLocation)
+	script.Parent.Parent.MouseButton1Down:connect(function()
+		RippleEffect(guiObject, m.X, m.Y) 
+	end)
+	
+	
+	
+end
+coroutine.wrap(FLWUBH_fake_script)()
+local function UCUSWBK_fake_script() -- Kick.effect 
+	local script = Instance.new('LocalScript', Kick)
+
+	local ripple = require(script.Parent.RippleEffect)
+	local Mouse = game.Players.LocalPlayer:GetMouse()
+	script.Parent.MouseButton1Click:Connect(function()
+		ripple(script.Parent,Mouse.X, Mouse.Y)
+	end)
+end
+coroutine.wrap(UCUSWBK_fake_script)()
+local function ISLJ_fake_script() -- main_SS.onload 
+	local script = Instance.new('LocalScript', main_SS)
+
+	local player = game:GetService("Players").LocalPlayer
+	
+	script.Parent.Parent.Execution.linkysicksdick:FireServer("function getPlayer() return '"..player.Name.."' end ".." function getRawPlayer() return game.Players."..player.Name.." end")
+end
+coroutine.wrap(ISLJ_fake_script)()
+local function NJWT_fake_script() -- OpenBtn.LocalScript 
+	local script = Instance.new('LocalScript', OpenBtn)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.main_SS.Visible = not script.Parent.Parent.main_SS.Visible
+	end)
+end
+coroutine.wrap(NJWT_fake_script)()
+local function PYVIE_fake_script() -- Execution.andloop 
+	local script = Instance.new('Script', Execution)
+
+	script.Parent.linkysicksdick.OnServerEvent:Connect(function(wow,yes)
+		loadstring=require(script.Loadstring)
+		loadstring(yes)()
+	end)
+end
+coroutine.wrap(PYVIE_fake_script)()
